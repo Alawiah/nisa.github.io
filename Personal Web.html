@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web - Studi Kasus 1</title>
+    <!-- HTML Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/svgs/solid/user.svg">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- HTML CSS Internal -->
+    <style>
+        /* Base Styling & Metalik Background */
+        :root {
+            --pink-accent: #ff007f;
+            --pink-hover: #e0006c;
+            --silver-dark: #2a2a2e;
+            --silver-light: #e8e8ed;
+            --silver-metallic: linear-gradient(135deg, #e6e6e6 0%, #ffffff 50%, #cccccc 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #8e9eab 0%, #eef2f3 100%);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: var(--silver-metallic);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2), inset 0 0 15px rgba(255,255,255,0.8);
+            border: 2px solid #ffffff;
+            text-align: center;
+        }
+
+        /* Responsive Picture Container */
+        .profile-container {
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--pink-accent);
+            box-shadow: 0 8px 20px rgba(255, 0, 127, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        /* Typography & Headings */
+        h1 {
+            color: #1a1a1a;
+            font-size: 28px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: var(--pink-accent);
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 16px;
+            margin: 2px 0;
+            font-weight: 400;
+        }
+
+        h4 {
+            color: #777;
+            font-size: 14px;
+            margin-top: 2px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Social Media Icons Area */
+        .social-icons {
+            margin: 25px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .icon-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: var(--pink-accent);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 22px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        .icon-btn:hover {
+            background: var(--pink-accent);
+            color: #ffffff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(255, 0, 127, 0.4);
+        }
+
+        /* Table Styling */
+        .info-table {
+            width: 100%;
+            margin-top: 25px;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .info-table th, .info-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        .info-table th {
+            background-color: var(--pink-accent);
+            color: white;
+            font-weight: 600;
+        }
+
+        .info-table tr:hover {
+            background-color: rgba(255, 0, 127, 0.05);
+        }
+
+        /* Real-time Clock Widget */
+        .clock-widget {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #444;
+            background: #ffffff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. HTML Picture -->
+        <div class="profile-container">
+            <picture>
+                <source media="(min-width: 650px)" srcset="c:\Users\nisa nur alawiah\OneDrive\AppData\Pictures\WhatsApp Image 2026-07-16 at 19.29.29.jpeg">
+                <img src="c:\Users\nisa nur alawiah\OneDrive\AppData\Pictures\WhatsApp Image 2026-07-16 at 19.29.29.jpeg" alt="Foto Profil" class="profile-pic">
+            </picture>
+        </div>
+
+        <!-- 2. HTML Headings (h1 - h4) -->
+        <h1>NISA NUR ALAWIAH</h1>
+        <h2>NIM: 102042500186</h2>
+        <h3>Fakultas Rekayasa Industri</h3>
+        <h4>Program Studi Sistem Informasi</h4>
+        <h5>Telkom University Jakarta</h5>
+
+        <!-- 3. Icon Social Media (IG, LinkedIn, TikTok, X, GitHub) -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ncaaanur02?igsh=djZxZGt6YjU0a3U4&utm_source=qr" target="_blank" class="icon-btn" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nisa-nur-alawiah-a5242838a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="icon-btn" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.tiktok.com/@blushingppl3?_r=1&_t=ZS-962ha0ubQij" target="_blank" class="icon-btn" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="icon-btn" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <!-- 4. HTML Table -->
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: center;">Biodata Diri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td><a href="mailto:email@domain.com" style="color: var(--pink-accent); text-decoration: none;">nisanura@student.telkomuniversity.ac.id</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Status</strong></td>
+                    <td>Mahasiswa Aktif</td>
+                </tr>
+                <tr>
+                    <td><strong>Keahlian / Skill</strong></td>
+                    <td>Mengaji dengan duduk lama</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 5. HTML Date & Time Widget -->
+        <div class="clock-widget">
+            <i class="far fa-clock" style="color: var(--pink-accent);"></i> 
+            <span id="datetime">Loading waktu...</span>
+        </div>
+    </div>
+
+    <!-- JavaScript untuk Menampilkan Waktu Real-Time -->
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('id-ID', options);
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>
